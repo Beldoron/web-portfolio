@@ -1,18 +1,40 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import MainPage from './components/MainPage/MainPage'
+import JournalPage from './components/JournalPage/JournalPage'
+import ResumePage from './components/ResumePage/ResumePage'
 
 class App extends Component {
+state = {
+  journalPageVisible: false,
+  resumePageVisible: false,
+}
+
+handleClickJournal = () => {
+  this.setState({
+    journalPageVisible: !this.state.journalPageVisible,
+  }) 
+}
+
+handleClickResume = () => {
+  this.setState({
+    resumePageVisible: !this.state.resumePageVisible,
+  }) 
+}
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to the web-portfolio</h1>
-        </header>
-        <p className="App-intro">
-          under construction
-        </p>
+      <div className="app">
+        
+          <JournalPage 
+          onClick={this.handleClickJournal}
+          visibilityLP={this.state.journalPageVisible} />
+          <MainPage />
+          <ResumePage 
+          onClick={this.handleClickResume}
+          visibilityRP={this.state.resumePageVisible}/>
+        
       </div>
     );
   }

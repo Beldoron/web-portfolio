@@ -1,0 +1,21 @@
+.centered {
+    background-color: rgb(0, 4, 255);
+    min-width: 100vw;
+    min-height: 100vh;
+    text-align: right;
+    position: absolute;
+    left: -25%;
+    top: 15%;
+}
+
+.journalPage {
+    background-color: fuchsia;
+    min-width: 100vw;
+    min-height: 100vh;
+    text-align: right;
+    position: absolute;
+    left: -95%;
+    top: 15%;
+   }
+
+

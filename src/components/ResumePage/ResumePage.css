@@ -1,0 +1,21 @@
+.centeredR {
+    background-color: red;
+    min-width: 100vw;
+    min-height: 100vh;
+    text-align: left;
+    position: absolute;
+    right: -25%;
+    top: 15%;
+   }
+
+.resumePage {
+    background-color: yellow;
+    min-width: 100vw;
+    min-height: 100vh;
+    text-align: left;
+    position: absolute;
+    right: -95%;
+    top: 15%;
+   }
+
+
